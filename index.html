@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrey Mavani- Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Shrey Mavani</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#tech-stack">Tech Stack</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="greeting">Hi There! I'm <span class="highlight">Shrey Mavani</span></h2>
+            <h1 class="title">I AM A <span class="typed-text"></span><span class="cursor">&nbsp;</span></h1>
+            <p class="hero-description">
+                Welcome to my little corner of the internet. I love building scalable distributed systems, 
+                architecting microservices, and optimizing cloud-native applications. With expertise in 
+                event-driven architectures and observability platforms, I transform complex technical 
+                challenges into elegant, high-performance solutions.
+            </p>
+            <a href="#contact" class="cta-button">Let's Connect</a>
+        </div>
+        <div class="hero-image">
+            <div class="image-placeholder">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="80" fill="#667eea" opacity="0.2"/>
+                    <circle cx="100" cy="100" r="60" fill="#667eea" opacity="0.4"/>
+                    <circle cx="100" cy="100" r="40" fill="#667eea" opacity="0.6"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">ABOUT ME</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a <strong>Software Developer</strong> specializing in building distributed systems 
+                        and observability platforms. Currently at <strong>Cloudera</strong>, I architect and develop 
+                        microservices that process massive telemetry streams and provide actionable insights for 
+                        big data workloads.
+                    </p>
+                    <p>
+                        I've led the design and implementation of high-performance analytics platforms leveraging 
+                        <strong>AWS services</strong>, event-driven architectures, and real-time monitoring systems. 
+                        My work enables customers to optimize costs, track resource consumption, and diagnose 
+                        distributed workloads across <strong>Apache Spark, Hive, and Impala</strong>.
+                    </p>
+                    <p>
+                        I graduated from <strong>DAICT</strong> with a BTech in ICT (GPA: 8.3) and have since focused 
+                        on building scalable, high-availability systems. I'm passionate about cloud-native technologies, 
+                        microservices architecture, and leveraging AI for intelligent automation.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder-square">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="20" width="160" height="160" fill="#764ba2" opacity="0.3" rx="10"/>
+                            <rect x="40" y="40" width="120" height="120" fill="#667eea" opacity="0.5" rx="10"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Education & Certifications -->
+            <div class="education-section">
+                <div class="education-card">
+                    <h3>🎓 Education</h3>
+                    <h4>BTech in ICT</h4>
+                    <p>Dhirubhai Ambani Institute of Information and Communication Technology</p>
+                    <p class="date">Graduated: May 2023 | GPA: 8.3</p>
+                </div>
+                <div class="education-card">
+                    <h3>📜 Certifications</h3>
+                    <ul>
+                        <li>Prompt Engineering Programming with OpenAI</li>
+                        <li>Machine Learning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">EXPERIENCE</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="company-header">
+                            <h3>Cloudera, Inc.</h3>
+                            <span class="date">July 2023 - Present</span>
+                        </div>
+                        <h4>Software Developer | Team Observability</h4>
+                        <p class="location">📍 Koramangala, Bangalore</p>
+                        
+                        <ul class="experience-list">
+                            <li>Led the architectural design (HLD/LLD) and implementation of the <strong>Observability Chargeback microservices platform</strong>, leveraging unit pricing and telemetry to enable granular cost reporting (CPU, memory, GPU) across big data clusters</li>
+                            <li>Engineered high-performance analytics and resource tracking microservices powered by <strong>Athena</strong>, optimizing complex queries to efficiently analyze consumption data at multiple granularities (daily, weekly, monthly)</li>
+                            <li>Implemented a comprehensive, <strong>event-driven alerting and monitoring system</strong> using microservices and APIs to expose detailed pod/executor-level metrics for real-time diagnostics of distributed workloads (Apache Spark, Hive, Impala, ML jobs)</li>
+                            <li>Collaborated with cross-functional teams to integrate data across microservices, promoted changes to production in shared DevOps rotations, and resolved high-priority customer issues during on-call escalations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div class="projects-section">
+                <h3 class="projects-title">Key Projects</h3>
+                
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h4>🏗️ High-Volume Chargeback and Budgets System</h4>
+                        <p>Led HLD/LLD for a distributed system implementing scalable event-driven architecture to ingest and process massive telemetry streams across thousands of clusters.</p>
+                        <ul>
+                            <li>Optimized analytical queries using Athena for cost optimization</li>
+                            <li>Multi-granularity tracking (daily, weekly, monthly)</li>
+                            <li>High-availability alerting with configurable budget notifications</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h4>⚡ Real-Time Diagnostics Platform</h4>
+                        <p>Architected a low-latency monitoring platform delivering comprehensive metadata insights for Impala, Spark, Hive, and ML workloads.</p>
+                        <ul>
+                            <li>Interactive dashboards for job diagnostics</li>
+                            <li>Cross-dimensional workload analysis</li>
+                            <li>Resource consumption visualization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="tech-stack">
+        <div class="container">
+            <h2 class="section-title">My Tech Stack</h2>
+            <p class="section-subtitle">Technologies I work with to build scalable systems.</p>
+            
+            <div class="tech-category">
+                <h3 class="category-title">Languages & Frameworks</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="tech-logo">
+                        <p>Java</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" class="tech-logo">
+                        <p>Spring Boot</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="tech-logo">
+                        <p>C++</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-logo">
+                        <p>Python</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-category">
+                <h3 class="category-title">Cloud & Infrastructure</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" class="tech-logo">
+                        <p>AWS</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" class="tech-logo">
+                        <p>Kubernetes</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="tech-logo">
+                        <p>Docker</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform" class="tech-logo">
+                        <p>Terraform</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-category">
+                <h3 class="category-title">Databases & Storage</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="DynamoDB" class="tech-logo">
+                        <p>DynamoDB</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="tech-logo">
+                        <p>PostgreSQL</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" class="tech-logo">
+                        <p>Redis</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="Athena" class="tech-logo">
+                        <p>Athena</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="tech-logo">
+                        <p>MongoDB</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" class="tech-logo">
+                        <p>SQL</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-category">
+                <h3 class="category-title">Backend & Messaging</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" alt="Apache Kafka" class="tech-logo">
+                        <p>Apache Kafka</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS Kinesis" class="tech-logo">
+                        <p>Kinesis</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grpc/grpc-original.svg" alt="gRPC" class="tech-logo">
+                        <p>gRPC</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" alt="WebSockets" class="tech-logo">
+                        <p>WebSockets</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="Nginx" class="tech-logo">
+                        <p>Nginx</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://www.svgrepo.com/show/354202/postman-icon.svg" alt="Swagger" class="tech-logo">
+                        <p>Swagger API</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-category">
+                <h3 class="category-title">Observability & Monitoring</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana" class="tech-logo">
+                        <p>Grafana</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://www.vectorlogo.zone/logos/splunk/splunk-ar21.svg" alt="Splunk" class="tech-logo">
+                        <p>Splunk</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kibana/kibana-original.svg" alt="Kibana" class="tech-logo">
+                        <p>Kibana</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/argocd/argocd-original.svg" alt="ArgoCD" class="tech-logo">
+                        <p>ArgoCD</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" class="tech-logo">
+                        <p>Jenkins</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" alt="Prometheus" class="tech-logo">
+                        <p>Prometheus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="contact-subtitle">
+                ☕ for a cup of coffee, challenges, or conversations that spark something new
+            </p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <a href="mailto:mavanishrey@gmail.com">mavanishrey@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <a href="tel:+917433016153">+91 74330 16153</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">💼</span>
+                    <a href="https://linkedin.com/in/MavaniShrey" target="_blank">LinkedIn: MavaniShrey</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">💻</span>
+                    <a href="https://github.com/ShreyMavani" target="_blank">GitHub: ShreyMavani</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">🧮</span>
+                    <a href="https://leetcode.com/ShreyMavani" target="_blank">LeetCode: ShreyMavani</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Shrey Mavani. All rights reserved.</p>
+            <p class="footer-tagline">Building scalable systems, one microservice at a time.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
